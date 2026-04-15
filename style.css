@@ -392,3 +392,20 @@ section {
 #contact {
     scroll-margin-top: 80px;
 }
+
+
+/* Kode ini khusus untuk mengatur tampilan di layar HP */
+@media (max-width: 768px) {
+    /* Ganti '.container-testimoni' dengan nama class pembungkus kotak kamu */
+    .container-testimoni { 
+        display: flex;
+        flex-direction: column; /* Membuat kotak tersusun ke bawah, bukan ke samping */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card-testimoni { /* Ganti dengan nama class kotak testimoninya */
+        width: 90%; /* Supaya kotak lebarnya pas dengan layar HP */
+        margin: 0 auto;
+    }
+}
