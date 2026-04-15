@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - StudentTaskr</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Khusus styling halaman login agar terpusat */
+        body {
+            background-color: #f4f7f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .login-container p {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #444;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #eee;
+            border-radius: 10px;
+            outline: none;
+            transition: 0.3s;
+        }
+        .form-group input:focus {
+            border-color: #4db6ac; /* Warna Tosca */
+        }
+        .btn-submit {
+            width: 100%;
+            padding: 12px;
+            background-color: #333; /* Warna Hitam Favoritmu */
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn-submit:hover {
+            background-color: #000;
+        }
+        .login-footer {
+            margin-top: 20px;
+            font-size: 13px;
+        }
+        .login-footer a {
+            color: #4db6ac;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="logo" style="margin-bottom: 20px; font-weight: bold; font-size: 24px;">
+            <span style="color: #4db6ac;">✓</span> StudentTaskr
+        </div>
+        <h2>Selamat Datang Kembali!</h2>
+        <p>Silakan masuk untuk mengelola tugas kuliahmu.</p>
+
+        <form>
+            <div class="form-group">
+                <label>Email Mahasiswa</label>
+                <input type="email" placeholder="contoh@kampus.ac.id" required>
+            </div>
+            <div class="form-group">
+                <label>Kata Sandi</label>
+                <input type="password" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="btn-submit">Masuk Sekarang</button>
+        </form>
+
+        <div class="login-footer">
+            Belum punya akun? <a href="#">Daftar Sekarang</a>
+        </div>
+    </div>
+
+</body>
+</html>
