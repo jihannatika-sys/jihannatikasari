@@ -198,9 +198,9 @@ header {
 
 
 .hero-image img {
-    max-width: 100%; /* Agar tidak melebihi container */
-    width: 450px;    /* Atur angka ini sampai teks di kiri terlihat pas ukurannya */
-    height: auto;
+    width: 100%;
+    max-width: 450px;
+
 }
 .hero-wrapper {
     display: flex;
